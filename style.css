@@ -2,8 +2,13 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+}
+
+body {
   padding: 2rem;
   font-family: 'Segoe UI', Roboto, sans-serif;
   background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
@@ -11,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;  /* Zorgt dat body minstens schermhoogte heeft */
+  box-sizing: border-box;
 }
 
 .avatar {
