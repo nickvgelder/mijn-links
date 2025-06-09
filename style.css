@@ -1,0 +1,84 @@
+/* style.css */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Algemene stijl voor knoppen */
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 320px;
+  padding: 1rem;
+  margin: 0.6rem auto;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.link-button i {
+  font-size: 1.2rem;
+}
+
+/* Specifieke platform-kleuren */
+.instagram { background-color: #E1306C; }
+.instagram:hover { background-color: #C92E66; }
+
+.x { background-color: #000000; }
+.x:hover { background-color: #111111; }
+
+.discord { background-color: #5865F2; }
+.discord:hover { background-color: #4752C4; }
+
+.linkedin { background-color: #0077B5; }
+.linkedin:hover { background-color: #006097; }
+
+.github { background-color: #333; }
+.github:hover { background-color: #24292e; }
+
+.email { background-color: #6B7280; }
+.email:hover { background-color: #4B5563; }
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .link-button {
+    font-size: 0.95rem;
+  }
+}
